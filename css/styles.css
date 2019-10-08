@@ -110,8 +110,6 @@ header {
 
 .head-img {
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     width: 50%;   
     
 }
@@ -124,17 +122,12 @@ header {
 
 .logo {
     width: 120px;
-    /* height: auto; */
 }
 
 .cart {
     width: 60px;
-    /* height: auto; */
 }
-/* 
-.cart-box {
-    order: 3;
-} */
+
 
 nav {
     margin: 10px auto;
@@ -153,7 +146,7 @@ nav {
 }
 
 main {
-    padding-top: 158px;
+    padding-top: 125px;
 }
 
 /* BANNER SECTION */
@@ -182,7 +175,7 @@ main {
 /* STYLES SECTION */
 
  .styles {
-    padding: 158px 20px 0; 
+    padding: 125px 20px 0; 
 }
 
 
@@ -193,7 +186,7 @@ main {
 .products {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 158px;
+    padding-top: 125px;
 
 }
 
@@ -268,7 +261,7 @@ main {
 /* CAROUSEL SECTION */
 
 .carousel {
-    padding: 158px 20px 0;
+    padding: 125px 20px 0;
 }
 
 .carousel-item {
@@ -287,7 +280,7 @@ main {
 /* UPDATES SECTION */
 
 .updates-top-padding {
-    padding-top: 158px;
+    padding-top: 125px;
 }
 
  .updates {
@@ -409,7 +402,7 @@ footer {
     /* FIXED NAVBAR */
 
     main {
-        padding-top: 107px;
+        padding-top: 86px;
     }
 
     header {
@@ -425,8 +418,6 @@ footer {
     .head-img {
         order: 1;
         display: flex;
-        /* justify-content: space-between; 
-        align-items: center;  */
         width: 20%;   
         
     }
@@ -443,7 +434,6 @@ footer {
         margin: 0;
         width: 60%;
         border: none;
-        /* padding: 0 75px 0 0; */
         padding: 0;
 
     }
@@ -456,7 +446,18 @@ footer {
         font-size: 4rem;
     }
 
+    /* STYLES PADDING */
+
+    .styles {
+        padding-top: 86px; 
+    }
+
     /* PRODUCT BOXES */
+
+    .products {
+        padding-top: 86px;
+    
+    }
 
     .product-link {
         font-size: 1.7rem;
@@ -495,6 +496,12 @@ footer {
 
 
     }
+
+/* UPDATES PADDING */
+
+.updates-top-padding {
+    padding-top: 86px;
+}
 
     /* FOOTER SECITON */
 
@@ -563,6 +570,27 @@ h1 {
 
 .product-link {
     font-size: 2.25rem;
+}
+
+/* STYLES PADDING */
+
+.styles {
+    padding-top: 101px; 
+}
+
+
+/* PRODUCT BOXES */
+
+.products {
+    padding-top: 101px;
+
+}
+
+
+/* UPDATES PADDING */
+
+.updates-top-padding {
+    padding-top: 101px;
 }
 
 
