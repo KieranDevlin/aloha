@@ -264,6 +264,10 @@ main {
     padding: 125px 20px 0;
 }
 
+.carousel-width {
+    width: 100%;
+}
+
 .carousel-item {
     display: inline-block;
 }
