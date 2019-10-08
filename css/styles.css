@@ -110,8 +110,7 @@ header {
 
 .head-img {
     display: flex;
-    width: 50%;   
-    
+    width: 50%;       
 }
 
 .head-cart {
@@ -130,24 +129,22 @@ header {
 
 
 nav {
-    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
     border-top: solid 1px #d7d7d7;
-    padding: 0 4%;
+    /* padding: 5px 4% 0; */
     width: 100%
-}
-
-
-.nav-list {
-    margin: 0 auto;
 }
 
 .nav-item {
     display: inline-block;
-    margin: 1%;
+    margin: 10px 1% 11px;
 }
 
 main {
-    padding-top: 125px;
+    padding-top: 120px;
 }
 
 /* BANNER SECTION */
@@ -176,7 +173,7 @@ main {
 /* STYLES SECTION */
 
  .styles {
-    padding: 125px 20px 0; 
+    padding: 120px 20px 0; 
 }
 
 
@@ -187,7 +184,7 @@ main {
 .products {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 125px;
+    padding-top: 120px;
 
 }
 
@@ -262,7 +259,7 @@ main {
 /* CAROUSEL SECTION */
 
 .carousel {
-    padding: 125px 20px 0;
+    padding: 120px 20px 0;
 }
 
 .carousel-width {
@@ -285,7 +282,7 @@ main {
 /* UPDATES SECTION */
 
 .updates-top-padding {
-    padding-top: 125px;
+    padding-top: 120px;
 }
 
  .updates {
@@ -333,7 +330,7 @@ main {
     border: solid 2px #e2574c;
     border-radius: 50px;
     position: absolute;
-    right: 20%;  
+    right: 18%;  
     top: 3.5px;    
 }
 
@@ -413,7 +410,7 @@ footer {
     header {
         flex-wrap: nowrap;
     }
-    
+
     .cart {
         order: 3;
         padding-bottom: 10px;
