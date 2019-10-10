@@ -150,23 +150,27 @@ main {
 /* BANNER SECTION */
 
 .banner {
-    min-height: 40.625rem;
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png)  no-repeat center 150px  , url(../images/flower-bkgd.jpg) repeat-x  center ;
-    background-size: auto, contain, cover;
-    width: 100%;
-    height: auto;
+    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
+    background-size: contain, contain, cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
 
 
 }
 
 .banner-text-box {
-    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
 .banner-text {
     color: white;
     margin: auto;
+    font-size: 3rem;  
     text-shadow: 2px 2px 4px #242424;
 }
 
@@ -306,32 +310,35 @@ main {
 }
 
 .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
-    position: relative;
-    width: 100%;
 
 }
 
 .your-email {
     background-color: white;
     color: #242424;
-    padding: 1.2rem 1rem;
-    padding-right: 42%;
     border: none;
     border-radius: 50px;
     box-shadow: none;
-    margin: 0 auto;
+    padding: 0 2rem;
+    width: 90%;
+    line-height: 3rem;
 }
 
 .submit-button {
     background-color: #e2574c;
     color: white;
-    padding: .8rem 2rem;
     border: solid 2px #e2574c;
     border-radius: 50px;
-    position: absolute;
-    right: 18%;  
-    top: 3.5px;    
+    padding: 0 2rem;
+    position: relative;
+    line-height: 2.3rem;
+    right: -33%;  
+    top: -39px;    
 }
 
 
@@ -448,6 +455,13 @@ footer {
         font-size: 4rem;
     }
 
+    /* BANNER  */
+
+.banner {
+    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
+    background-size: contain, contain, cover;
+    }
+
     /* STYLES PADDING */
 
     .styles {
@@ -550,6 +564,8 @@ footer {
 
 @media screen and (min-width: 1240px) {
  
+/* NAV BAR */
+
 .logo {
     width: 150px
 }
@@ -561,6 +577,20 @@ footer {
 .nav-item {
     margin: 0 20px;
 }
+
+/* BANNER  */
+
+.banner {
+background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
+background-size: contain, contain, contain;
+height: 550px;
+}
+
+.banner-text {
+    font-size: 4rem;
+}
+
+/* BODY */
 
 main {
     padding-top: 101px;
