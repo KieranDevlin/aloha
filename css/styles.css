@@ -99,7 +99,10 @@ a:active {
 
 /* HEADER SECTION */
  
-
+.accessibility {
+    position: absolute; 
+    top: -70px;
+}
 
 header {
     padding: 1rem;
