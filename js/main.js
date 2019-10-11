@@ -15,10 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const userEmail = document.getElementById("user-email");
   const button = document.getElementById("submit-button");
   // ADD TO CART COUNTER
-  const buyNow = document.getElementsByClassName("buy-now");
+  const buyNowBtn = document.querySelector(".buy-now");
   const counter = document.getElementById("counter");
   let clicks =0;
-
 
   // this creates an alert if the user input is empty or 
   // doesnt follow the default html email structure validator
@@ -41,15 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //the buy now buttons in the array
   // and adds 1 to the click counter beside the 
   // cart img in html - mimicing a real user ecommerce cart
-  for (let i=0; i < buyNow.length; i++){
-  buyNow[i].addEventListener("click", function (event) {
+    buyNowBtn.addEventListener("click", function (event) {
     event.preventDefault();
     clicks += 1;
     counter.innerHTML = clicks;
     console.log(clicks);
-
-  });
-  };
+    
+    });
 
 
 
