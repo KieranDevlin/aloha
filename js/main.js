@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const userEmail = document.getElementById("user-email");
   const button = document.getElementById("submit-button");
   // ADD TO CART COUNTER
-  const buyNowBtn = document.querySelector(".buy-now");
+  const buyNowBtn = document.querySelectorAll(".buy-now");
   const counter = document.getElementById("counter");
   let clicks =0;
 
@@ -40,14 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
   //the buy now buttons in the array
   // and adds 1 to the click counter beside the 
   // cart img in html - mimicing a real user ecommerce cart
-    buyNowBtn.addEventListener("click", function (event) {
+  for (i=0; i < buyNowBtn.length; i++){
+    buyNowBtn[i].addEventListener("click", function (event) {
     event.preventDefault();
     clicks += 1;
     counter.innerHTML = clicks;
     console.log(clicks);
     
     });
-
+  };
 
 
 
