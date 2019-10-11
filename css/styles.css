@@ -53,6 +53,14 @@ h3 {
     font-weight: normal;
 }
 
+
+/* ADDRESS THIS */
+#user-email {
+    font-family: 'Raleway-Light' , sans-serif;
+
+
+}
+
 .bold-text {
     display: inline;
     font-style: normal;
@@ -128,6 +136,9 @@ header {
     width: 60px;
 }
 
+#counter {
+    color: #e2574c;
+}
 
 nav {
     display: flex;
@@ -196,7 +207,6 @@ main {
 .products-item {
     background-repeat: no-repeat;
     border: solid 4px white;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,6 +281,20 @@ main {
     padding-bottom: 20px;
 }
 
+.buy-now {
+    background-color: #e2574c;
+    color: white;
+    border: solid 2px #e2574c;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.buy-now:active {
+    background-color: #b64036;
+    border-color: #b64036;
+
+}
+
 /* mobile style */
 .carousel-cell {
     width: 100%;
@@ -331,6 +355,8 @@ main {
 
 }
 
+
+
 .your-email {
     background-color: white;
     color: #242424;
@@ -340,6 +366,12 @@ main {
     padding: 0 2rem;
     width: 100%;
     line-height: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.your-email:focus {
+    outline: none;
 }
 
 .submit-button {
@@ -352,8 +384,17 @@ main {
     line-height: 2.3rem;
     right: .2rem;  
     top: .2rem;    
+    font-size: 1rem;
 }
 
+.submit-button:active {
+        background-color: #b64036;
+        border-color: #b64036;
+}
+
+.submit-button:focus {
+    outline: none;
+}
 
 /* FOOTER SELECTOR */
 
@@ -396,8 +437,6 @@ footer {
 
 
 .social-item {
-    /* font-weight: 300; */
-    /* padding: .5rem 0; */
     display: inline;
 }
 
@@ -536,6 +575,12 @@ footer {
 
 .updates-top-padding {
     padding-top: 86px;
+}
+
+
+.submit-button {
+    right: .2rem;  
+    top: .25rem;    
 }
 
     /* FOOTER SECITON */
