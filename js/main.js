@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   emailForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    if (userEmail.value == "") {
+    if (userEmail.value === "") {
       alert("Please enter a valid email address!");
     } else {
       alert("Thank you for subscribing!");

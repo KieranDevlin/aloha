@@ -94,8 +94,8 @@ a:active {
 /* HEADER SECTION */
  
 .accessibility {
-    position: absolute; 
-    top: -70px;
+    visibility: hidden;
+    position: absolute;
 }
 
 header {
@@ -118,6 +118,7 @@ header {
 }
 
 .head-cart {
+    position: relative;
     display: flex;
     justify-content: flex-end;
 }
@@ -132,7 +133,10 @@ header {
 }
 
 #counter {
+    position: absolute;
     color: #e2574c;
+    top: -5px;
+    right: -5px;
 }
 
 nav {
