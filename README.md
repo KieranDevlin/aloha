@@ -1,6 +1,6 @@
 # Aloha
 
-This is the first project at RED Academy, rebuilding a mobile--first, responsive Aloha Apparel Co. website from sample images.
+This is the first project at RED Academy. I  rebuilt a mobile-first, responsive website, Aloha Apparel Co, from sample images and design specifications provided by the RED Academy. The website is responsive to 1240px, 600px, and below 600px. The user email input doesn't actually upload to any database or API, but does generate alerts based on the user input. The add to cart button does in fact add to a counter, but doesn't generate a list of actual items in the cart - it only counts user clicks. Check out the Key Learnings for more info!
 
 ## Key Learnings
 
