@@ -18,10 +18,7 @@ body {
     text-align: center;
 }
 
-
-
 p {
-    
     color: #242424;
     font-size: 1.1rem;
     font-weight: 100;
@@ -53,10 +50,8 @@ h3 {
     font-weight: normal;
 }
 
-
 .your-email {
     font-family: 'Raleway-Light' , sans-serif;
-
 }
 
 .bold-text {
@@ -72,7 +67,6 @@ a {
 
 a:hover {
     color: #b64036;
-
 }
 
 a:focus,
@@ -147,7 +141,6 @@ nav {
     align-items: center;
     margin-top: 10px;
     border-top: solid 1px #d7d7d7;
-    /* padding: 5px 4% 0; */
     width: 100%
 }
 
@@ -169,15 +162,11 @@ main {
     align-items: center;
     justify-content: center;
     height: 400px;
-
-
 }
 
 .banner-text-box {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .banner-text {
@@ -193,16 +182,12 @@ main {
     padding: 120px 20px 0; 
 }
 
-
-
-
 /* PRODCUTS SECTION */
 
 .products {
     display: flex;
     flex-wrap: wrap;
     padding-top: 120px;
-
 }
 
 .products-item {
@@ -228,7 +213,6 @@ main {
     background-size:contain,  cover;
     flex-basis:50%;
     border-left: none;
-
 }
 
 .products-item:nth-child(3) {
@@ -236,7 +220,6 @@ main {
     background-size:contain,  cover;
     flex-basis:50%;
     border-right: none;
-
 }
 
 .products-item:nth-child(4) {
@@ -244,7 +227,6 @@ main {
     background-size:contain,  cover;
     flex-basis:50%;
     border-left: none;
-
 }
 
 .products-item:nth-child(5) {
@@ -252,7 +234,6 @@ main {
     background-size:contain,  cover;
     flex-basis:50%;
     border-right: none;
-
 }
 
 .products-item:nth-child(6) {
@@ -269,8 +250,6 @@ main {
     text-shadow: 2px 2px 4px #242424;
 
 }
-
-
 
 /* CAROUSEL SECTION */
 
@@ -338,11 +317,8 @@ main {
     justify-content: center;
     flex-direction: column;
     color: white;
-    /* padding: 6rem 20px; */
-    /* margin: 0 auto; */
     max-width: 720px;
-    width: 100%;
-    
+    width: 100%;   
 } 
 
 .updates p {
@@ -353,10 +329,7 @@ main {
     position: relative;
     width: 75%;
     margin-top: 5%;
-
 }
-
-
 
 .your-email {
     background-color: white;
@@ -404,13 +377,11 @@ footer {
     background-color: #242424;
     padding: 50px;
     text-align: center;
-
 }
 
 .footer-text {
     color: white;
     line-height: 1.5rem;
-
 }
 
 .footer-text-grey {
@@ -436,11 +407,9 @@ footer {
     padding: 0 10px;
 }
 
-
 .social-item {
     display: inline;
 }
-
 
 .social-item-color {
     color: white;
@@ -451,7 +420,6 @@ footer {
 }
 
 /* RESPONSIVE DESIGN  */
-
 
 @media screen and (min-width: 600px) {
 
@@ -474,14 +442,12 @@ footer {
     .cart {
         order: 3;
         padding-bottom: 10px;
-    
     }
 
     .head-img {
         order: 1;
         display: flex;
         width: 20%;   
-        
     }
     
     .head-cart {
@@ -497,7 +463,6 @@ footer {
         width: 60%;
         border: none;
         padding: 0;
-
     }
 
     .nav-item {
@@ -525,7 +490,6 @@ footer {
 
     .products {
         padding-top: 86px;
-    
     }
 
     .product-link {
@@ -539,50 +503,42 @@ footer {
     .products-item:nth-child(1) {
         flex-basis: 50%;
         border-right: solid 4px white;
-
     }
     .products-item:nth-child(2) {
         flex-basis: 25%;
         border-left: solid 4px white;
-
     }
     .products-item:nth-child(3) {
         flex-basis: 25%;
-
     }
     .products-item:nth-child(4) {
         flex-basis: 25%;
-
     }
     .products-item:nth-child(5) {
         flex-basis: 25%;
         border-right: solid 4px white;
-
     }
     .products-item:nth-child(6) {
         flex-basis: 50%;
         border-left: solid 4px white;
-
-
     }
 
-/* FLICKITY */
+    /* FLICKITY */
 
-.carousel-cell {
-    width: 50%;
-  }
+    .carousel-cell {
+        width: 50%;
+      }
 
-/* UPDATES PADDING */
+    /* UPDATES PADDING */
 
-.updates-top-padding {
-    padding-top: 86px;
-}
+    .updates-top-padding {
+        padding-top: 86px;
+    }
 
-
-.submit-button {
-    right: .2rem;  
-    top: .25rem;    
-}
+    .submit-button {
+        right: .2rem;  
+        top: .25rem;    
+    }
 
     /* FOOTER SECITON */
 
@@ -599,15 +555,13 @@ footer {
     
     .social {
         margin-right: 50px;
-        text-align: left;   
-        
+        text-align: left;      
     }
     
     .social-item {
         font-weight: 300;
         padding: .5rem 0;
         display: block;
-
     }
     
     .social-icon {
@@ -622,82 +576,78 @@ footer {
         display: inline;
     }
 
-
 }
-
-
 
 @media screen and (min-width: 1240px) {
  
-/* NAV BAR */
+    /* NAV BAR */
 
-.logo {
-    width: 150px
-}
+    .logo {
+        width: 150px
+    }
 
-.cart {
-    width: 75px;
-}
+    .cart {
+        width: 75px;
+    }
 
-.nav-item {
-    margin: 0 20px;
-}
+    .nav-item {
+        margin: 0 20px;
+    }
 
-/* BANNER  */
+    /* BANNER  */
 
-.banner {
-background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
-background-size: contain, contain, contain;
-height: 550px;
-}
+    .banner {
+        background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
+        background-size: contain, contain, contain;
+        height: 550px;
+    }
 
-.banner-text {
-    font-size: 4rem;
-}
+    .banner-text {
+        font-size: 4rem;
+    }
 
-/* BODY */
+    /* BODY */
 
-main {
-    padding-top: 101px;
-}
+    main {
+        padding-top: 101px;
+    }
 
-h1 {
-    font-size: 4.5rem;
-}
+    h1 {
+        font-size: 4.5rem;
+    }
 
-.product-link {
-    font-size: 2.25rem;
-}
+    .product-link {
+        font-size: 2.25rem;
+    }
 
-/* STYLES PADDING */
+    /* STYLES PADDING */
 
-.styles {
-    padding-top: 101px; 
-}
+    .styles {
+        padding-top: 101px; 
+    }
 
 
-/* PRODUCT BOXES */
+    /* PRODUCT BOXES */
 
-.products {
-    padding-top: 101px;
+    .products {
+        padding-top: 101px;
+    }
 
-}
+    /* FLICKITY */
 
-/* FLICKITY */
+    .carousel-cell {
+        width: 25%;
+      }
 
-.carousel-cell {
-    width: 25%;
-  }
+    /* UPDATES PADDING */
 
-/* UPDATES PADDING */
+    .updates {
+        height: 22rem;
+    }
 
-.updates {
-    height: 22rem;
-}
-
-.updates-top-padding {
-    padding-top: 101px;
-}
+    .updates-top-padding {
+        padding-top: 101px;
+    }
 
 
 }
