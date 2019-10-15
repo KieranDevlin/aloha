@@ -27,3 +27,13 @@ This is the first project at RED Academy. I  rebuilt a mobile-first, 
 * used semantically named functions and variables to keep code easy to read     
 * used strict equality operators to generate an alert based on user input in email form     
 * used loops, functions, and conditionals to effectively implement JavaScript
+
+### Git
+
+* created a repository both locally and in the cloud with GitHub
+
+* effectively used git push to upload my local repository to my remote repository
+
+* used commits to follow version control best practices 
+
+* effectively used command line and commands on iTerm to initiate and commit git repositories 
