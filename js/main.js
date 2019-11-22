@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-
-  var elem = document.querySelector('.main-carousel');
-  var flkty = new Flickity(elem, {
-    cellAlign: 'left',
+document.addEventListener("DOMContentLoaded", function() {
+  const elem = document.querySelector(".main-carousel");
+  const flkty = new Flickity(elem, {
+    cellAlign: "left",
     contain: true,
     wrapAround: true,
     freeScroll: true,
@@ -17,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // ADD TO CART COUNTER
   const buyNowBtn = document.querySelectorAll(".buy-now");
   const counter = document.getElementById("counter");
-  let clicks =0;
+  let clicks = 0;
 
-  // this creates an alert if the user input is empty or 
+  // this creates an alert if the user input is empty or
   // doesnt follow the default html email structure validator
   // and provides a  different alert when user submits a proper
   // email
-  emailForm.addEventListener("submit", function (event) {
+  emailForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     if (userEmail.value === "") {
@@ -32,25 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Thank you for subscribing!");
       userEmail.value = "";
     }
-
   });
 
-
-  // This applies the click function to all 
+  // This applies the click function to all
   //the buy now buttons in the array
-  // and adds 1 to the click counter beside the 
+  // and adds 1 to the click counter beside the
   // cart img in html - mimicing a real user ecommerce cart
-  for (i=0; i < buyNowBtn.length; i++){
-    buyNowBtn[i].addEventListener("click", function (event) {
-    event.preventDefault();
-    clicks += 1;
-    counter.innerHTML = clicks;
-    console.log(clicks);
-    
+  for (i = 0; i < buyNowBtn.length; i++) {
+    buyNowBtn[i].addEventListener("click", function(event) {
+      event.preventDefault();
+      clicks += 1;
+      counter.innerHTML = clicks;
+      console.log(clicks);
     });
-  };
-
-
-
-
+  }
 });
