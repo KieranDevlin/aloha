@@ -133,7 +133,7 @@ a:active {
   width: 60px;
 }
 
-#counter {
+.counter {
   position: absolute;
   color: #e2574c;
   top: -5px;
