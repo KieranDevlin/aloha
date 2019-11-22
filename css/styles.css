@@ -2,658 +2,715 @@
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-size: 14px;
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 /* Typography */
 
 body {
-    font-family: 'Raleway' , sans-serif;
-    text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 p {
-    color: #242424;
-    font-size: 1.1rem;
-    font-weight: 100;
-    line-height: 2rem;
+  color: #242424;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 2rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-    font-weight: 300;
-    font-style: italic;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Playfair Display' , serif;
-    font-weight: normal;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
 }
 
 .banner h2 {
-    font-family: 'Raleway' , sans-serif;
-    font-style: normal;
-    font-size: 1.5rem;   
-    font-weight: normal;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .your-email {
-    font-family: 'Raleway-Light' , sans-serif;
+  font-family: "Raleway-Light", sans-serif;
 }
 
 .bold-text {
-    display: inline;
-    font-style: normal;
-    font-weight: bold;
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
 }
 
 a {
-    color: #e2574c;
-    text-decoration: none;
+  color: #e2574c;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #b64036;
+  color: #b64036;
 }
 
 a:focus,
 a:active {
-    display: inline-block;
-    outline: 1px dashed #b64036;
+  display: inline-block;
+  outline: 1px dashed #b64036;
 }
-
 
 /* LAYOUT SIZING SECTION */
 
 .container-small {
-    margin: 0 auto;
-    max-width: 720px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 720px;
+  width: 100%;
 }
 
 .container-medium {
-
-    margin: 0 auto;
-    max-width: 1240px;
+  margin: 0 auto;
+  max-width: 1240px;
 }
-
 
 /* HEADER SECTION */
- 
-.accessibility {
-    visibility: hidden;
-    position: absolute;
+
+.screen-reader {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
-header {
-    padding: 1rem;
-    padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,.75);
-    z-index: 99;
+.header-container {
+  padding: 1rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 99;
 }
 
 .head-img {
-    display: flex;
-    width: 50%;       
+  display: flex;
+  width: 50%;
 }
 
 .head-cart {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
-
 .logo {
-    width: 120px;
+  width: 120px;
 }
 
 .cart {
-    width: 60px;
+  width: 60px;
 }
 
 #counter {
-    position: absolute;
-    color: #e2574c;
-    top: -5px;
-    right: -5px;
+  position: absolute;
+  color: #e2574c;
+  top: -5px;
+  right: -5px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    border-top: solid 1px #d7d7d7;
-    width: 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-top: solid 1px #d7d7d7;
+  width: 100%;
 }
 
 .nav-item {
-    display: inline-block;
-    margin: 10px 1% 11px;
+  display: inline-block;
+  margin: 10px 1% 11px;
 }
 
 main {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 /* BANNER SECTION */
 
 .banner {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
-    background-size: contain, contain, cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center,
+    url(../images/banner-girl.png) no-repeat center 60px,
+    url(../images/flower-bkgd.jpg) repeat-x top;
+  background-size: contain, contain, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
 }
 
 .banner-text-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-text {
-    color: white;
-    margin: auto;
-    font-size: 2.5rem;  
-    text-shadow: 2px 2px 4px #242424;
+  color: white;
+  margin: auto;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #242424;
 }
 
 /* STYLES SECTION */
 
- .styles {
-    padding: 120px 20px 0; 
+.styles {
+  padding: 120px 20px 0;
 }
 
 /* PRODCUTS SECTION */
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
 }
 
 .products-item {
-    background-repeat: no-repeat;
-    border: solid 4px white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vw;
+  background-repeat: no-repeat;
+  border: solid 4px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vw;
 }
 
 .products-item:nth-child(1) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/mens-category.jpg) no-repeat center center;
-    background-size: contain, cover;
-    flex-basis: 100%;
-    border-left: none;
-    border-right: none;
-
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/mens-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 100%;
+  border-left: none;
+  border-right: none;
 }
 
 .products-item:nth-child(2) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/trends-category.jpg) no-repeat center center;
-    background-size:contain,  cover;
-    flex-basis:50%;
-    border-left: none;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/trends-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 50%;
+  border-left: none;
 }
 
 .products-item:nth-child(3) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/glasses-category.jpg) no-repeat center center;
-    background-size:contain,  cover;
-    flex-basis:50%;
-    border-right: none;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/glasses-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 50%;
+  border-right: none;
 }
 
 .products-item:nth-child(4) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/sale-category.jpg) no-repeat center center;
-    background-size:contain,  cover;
-    flex-basis:50%;
-    border-left: none;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/sale-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 50%;
+  border-left: none;
 }
 
 .products-item:nth-child(5) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/bags-category.jpg) no-repeat center center;
-    background-size:contain,  cover;
-    flex-basis:50%;
-    border-right: none;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/bags-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 50%;
+  border-right: none;
 }
 
 .products-item:nth-child(6) {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center center , url(../images/womens-category.jpg) no-repeat center center;
-    background-size:contain,  cover;
-    flex-basis:100%;
-    border-left: none;
-    border-right: none;
+  background: linear-gradient(
+        to bottom,
+        rgba(41, 35, 36, 0.25),
+        rgba(23, 26, 46, 0.25)
+      )
+      center center,
+    url(../images/womens-category.jpg) no-repeat center center;
+  background-size: contain, cover;
+  flex-basis: 100%;
+  border-left: none;
+  border-right: none;
 }
 
 .product-link {
-    color: white;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px #242424;
-
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px #242424;
 }
 
 /* CAROUSEL SECTION */
 
 .carousel {
-    padding: 120px 20px 0;
+  padding: 120px 20px 0;
 }
 
 .carousel h2 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .buy-now {
-    background-color: #e2574c;
-    color: white;
-    border: solid 2px #e2574c;
-    border-radius: 50px;
-    font-size: 1rem;
+  background-color: #e2574c;
+  color: white;
+  border: solid 2px #e2574c;
+  border-radius: 50px;
+  font-size: 1rem;
 }
 
 .buy-now:active {
-    background-color: #b64036;
-    border-color: #b64036;
-
+  background-color: #b64036;
+  border-color: #b64036;
 }
 
 /* mobile style */
 .carousel-cell {
-    width: 100%;
-    text-align: center;
-    z-index: -1;
-  }
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
 
-  .carousel-img-width {
-    max-width: 100%; 
- }
+.carousel-img-width {
+  max-width: 100%;
+}
 
 .carousel-cell p {
-    color: #969696;
+  color: #969696;
 }
 
 .carousel-cell h3 {
-    color: #e2574c;
-    font-size: 1.5rem;
+  color: #e2574c;
+  font-size: 1.5rem;
 }
 
 /* UPDATES SECTION */
 
 .updates-top-padding {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
- .updates {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgba(33, 68, 58, 0.3) , rgba(45, 26, 54, 0.3)) center center ,  url(../images/wave-bkgd.jpg) no-repeat bottom center;
-    height: 24rem;
-    margin-bottom: 10px;
+.updates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+        to bottom,
+        rgba(33, 68, 58, 0.3),
+        rgba(45, 26, 54, 0.3)
+      )
+      center center,
+    url(../images/wave-bkgd.jpg) no-repeat bottom center;
+  height: 24rem;
+  margin-bottom: 10px;
 }
-
 
 .updates-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    max-width: 720px;
-    width: 100%;   
-} 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  max-width: 720px;
+  width: 100%;
+}
 
 .updates p {
-    color: white;
+  color: white;
 }
 
 .email {
-    position: relative;
-    width: 75%;
-    margin-top: 5%;
+  position: relative;
+  width: 75%;
+  margin-top: 5%;
 }
 
 .your-email {
-    background-color: white;
-    color: #242424;
-    border: none;
-    border-radius: 50px;
-    box-shadow: none;
-    padding: 0 2rem;
-    width: 100%;
-    line-height: 3rem;
-    font-size: 1rem;
-    font-weight: 300;
+  background-color: white;
+  color: #242424;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  padding: 0 2rem;
+  width: 100%;
+  line-height: 3rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .your-email:focus {
-    outline: none;
+  outline: none;
 }
 
 .submit-button {
-    background-color: #e2574c;
-    color: white;
-    border: solid 2px #e2574c;
-    border-radius: 50px;
-    padding: 0 2rem;
-    position: absolute;
-    line-height: 2.3rem;
-    right: .2rem;  
-    top: .2rem;    
-    font-size: 1rem;
+  background-color: #e2574c;
+  color: white;
+  border: solid 2px #e2574c;
+  border-radius: 50px;
+  padding: 0 2rem;
+  position: absolute;
+  line-height: 2.3rem;
+  right: 0.2rem;
+  top: 0.2rem;
+  font-size: 1rem;
 }
 
 .submit-button:active {
-        background-color: #b64036;
-        border-color: #b64036;
+  background-color: #b64036;
+  border-color: #b64036;
 }
 
 .submit-button:focus {
-    outline: none;
+  outline: none;
 }
 
 /* FOOTER SELECTOR */
 
 footer {
-    font-family: 'Playfair Display' , serif;
-    background-color: #242424;
-    padding: 50px;
-    text-align: center;
+  font-family: "Playfair Display", serif;
+  background-color: #242424;
+  padding: 50px;
+  text-align: center;
 }
 
 .footer-text {
-    color: white;
-    line-height: 1.5rem;
+  color: white;
+  line-height: 1.5rem;
 }
 
 .footer-text-grey {
-    color:#969696;
-    text-align: center;
-    line-height: 1.5rem;
+  color: #969696;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .contact-email {
-    color: white;
-    text-decoration: underline; 
+  color: white;
+  text-decoration: underline;
 }
 
 .social {
-    font-family: 'Raleway' , sans-serif;
-    list-style: none;
-    margin: 2rem auto;
-    text-align: center;   
-    
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .social-icon {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .social-item {
-    display: inline;
+  display: inline;
 }
 
 .social-item-color {
-    color: white;
+  color: white;
 }
 
 .social-name {
-    display: none;
+  display: none;
 }
 
 /* RESPONSIVE DESIGN  */
 
 @media screen and (min-width: 600px) {
+  /* TYPOGRAPHY */
 
-    /* TYPOGRAPHY */
+  html {
+    font-size: 16px;
+  }
 
-    html {
-        font-size: 16px;
-    }
+  /* FIXED NAVBAR */
 
-    /* FIXED NAVBAR */
+  main {
+    padding-top: 86px;
+  }
 
-    main {
-        padding-top: 86px;
-    }
+  .header-container {
+    flex-wrap: nowrap;
+  }
 
-    header {
-        flex-wrap: nowrap;
-    }
+  .cart {
+    order: 3;
+    padding-bottom: 10px;
+  }
 
-    .cart {
-        order: 3;
-        padding-bottom: 10px;
-    }
+  .head-img {
+    order: 1;
+    display: flex;
+    width: 20%;
+  }
 
-    .head-img {
-        order: 1;
-        display: flex;
-        width: 20%;   
-    }
-    
-    .head-cart {
-        order: 3;
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    nav {
-        order: 2;
-        margin: 0;
-        width: 60%;
-        border: none;
-        padding: 0;
-    }
+  .head-cart {
+    order: 3;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    .nav-item {
-        display: inline-block;
-    }
+  nav {
+    order: 2;
+    margin: 0;
+    width: 60%;
+    border: none;
+    padding: 0;
+  }
 
-    h1 {
-        font-size: 4rem;
-    }
+  .nav-item {
+    display: inline-block;
+  }
 
-    /* BANNER  */
+  h1 {
+    font-size: 4rem;
+  }
 
-.banner {
-    background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
+  /* BANNER  */
+
+  .banner {
+    background: linear-gradient(
+          to bottom,
+          rgba(41, 35, 36, 0.25),
+          rgba(23, 26, 46, 0.25)
+        )
+        center,
+      url(../images/banner-girl.png) no-repeat center 60px,
+      url(../images/flower-bkgd.jpg) repeat-x top;
     background-size: contain, contain, cover;
-    }
+  }
 
-    /* STYLES PADDING */
+  /* STYLES PADDING */
 
-    .styles {
-        padding-top: 86px; 
-    }
+  .styles {
+    padding-top: 86px;
+  }
 
-    /* PRODUCT BOXES */
+  /* PRODUCT BOXES */
 
-    .products {
-        padding-top: 86px;
-    }
+  .products {
+    padding-top: 86px;
+  }
 
-    .product-link {
-        font-size: 1.7rem;
-    }
+  .product-link {
+    font-size: 1.7rem;
+  }
 
-    .products-item {
-        height: 25vw;
-    }
+  .products-item {
+    height: 25vw;
+  }
 
-    .products-item:nth-child(1) {
-        flex-basis: 50%;
-        border-right: solid 4px white;
-    }
-    .products-item:nth-child(2) {
-        flex-basis: 25%;
-        border-left: solid 4px white;
-    }
-    .products-item:nth-child(3) {
-        flex-basis: 25%;
-    }
-    .products-item:nth-child(4) {
-        flex-basis: 25%;
-    }
-    .products-item:nth-child(5) {
-        flex-basis: 25%;
-        border-right: solid 4px white;
-    }
-    .products-item:nth-child(6) {
-        flex-basis: 50%;
-        border-left: solid 4px white;
-    }
+  .products-item:nth-child(1) {
+    flex-basis: 50%;
+    border-right: solid 4px white;
+  }
+  .products-item:nth-child(2) {
+    flex-basis: 25%;
+    border-left: solid 4px white;
+  }
+  .products-item:nth-child(3) {
+    flex-basis: 25%;
+  }
+  .products-item:nth-child(4) {
+    flex-basis: 25%;
+  }
+  .products-item:nth-child(5) {
+    flex-basis: 25%;
+    border-right: solid 4px white;
+  }
+  .products-item:nth-child(6) {
+    flex-basis: 50%;
+    border-left: solid 4px white;
+  }
 
-    /* FLICKITY */
+  /* FLICKITY */
 
-    .carousel-cell {
-        width: 50%;
-      }
+  .carousel-cell {
+    width: 50%;
+  }
 
-    /* UPDATES PADDING */
+  /* UPDATES PADDING */
 
-    .updates-top-padding {
-        padding-top: 86px;
-    }
+  .updates-top-padding {
+    padding-top: 86px;
+  }
 
-    .submit-button {
-        right: .2rem;  
-        top: .25rem;    
-    }
+  .submit-button {
+    right: 0.2rem;
+    top: 0.25rem;
+  }
 
-    /* FOOTER SECITON */
+  /* FOOTER SECITON */
 
-    footer {
-        padding: 50px;
-        text-align: left;
-        display: flex; 
-        justify-content: space-between;
-    }
+  footer {
+    padding: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .footer-text-grey {
-        text-align: left;
-    }
-    
-    .social {
-        margin-right: 50px;
-        text-align: left;      
-    }
-    
-    .social-item {
-        font-weight: 300;
-        padding: .5rem 0;
-        display: block;
-    }
-    
-    .social-icon {
-        width: 2rem;
-    }
-    
-    .social-item-color {
-        color: white;
-    } 
+  .footer-text-grey {
+    text-align: left;
+  }
 
-    .social-name {
-        display: inline;
-    }
+  .social {
+    margin-right: 50px;
+    text-align: left;
+  }
 
+  .social-item {
+    font-weight: 300;
+    padding: 0.5rem 0;
+    display: block;
+  }
+
+  .social-icon {
+    width: 2rem;
+  }
+
+  .social-item-color {
+    color: white;
+  }
+
+  .social-name {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1240px) {
- 
-    /* NAV BAR */
+  .header-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  /* NAV BAR */
 
-    .logo {
-        width: 150px
-    }
+  .logo {
+    width: 150px;
+  }
 
-    .cart {
-        width: 75px;
-    }
+  .cart {
+    width: 75px;
+  }
 
-    .nav-item {
-        margin: 0 20px;
-    }
+  .nav-item {
+    margin: 0 20px;
+  }
 
-    /* BANNER  */
+  /* BANNER  */
 
-    .banner {
-        background: linear-gradient(to bottom,rgba(41, 35, 36, 0.25), rgba(23, 26, 46, 0.25)) center , url(../images/banner-girl.png) no-repeat center 60px , url(../images/flower-bkgd.jpg) repeat-x top;
-        background-size: contain, contain, contain;
-        height: 550px;
-    }
+  .banner {
+    background: linear-gradient(
+          to bottom,
+          rgba(41, 35, 36, 0.25),
+          rgba(23, 26, 46, 0.25)
+        )
+        center,
+      url(../images/banner-girl.png) no-repeat center 60px,
+      url(../images/flower-bkgd.jpg) repeat-x top;
+    background-size: contain, contain, contain;
+    height: 550px;
+  }
 
-    .banner-text {
-        font-size: 4rem;
-    }
+  .banner-text {
+    font-size: 4rem;
+  }
 
-    /* BODY */
+  /* BODY */
 
-    main {
-        padding-top: 101px;
-    }
+  main {
+    padding-top: 101px;
+  }
 
-    h1 {
-        font-size: 4.5rem;
-    }
+  h1 {
+    font-size: 4.5rem;
+  }
 
-    .product-link {
-        font-size: 2.25rem;
-    }
+  .product-link {
+    font-size: 2.25rem;
+  }
 
-    /* STYLES PADDING */
+  /* STYLES PADDING */
 
-    .styles {
-        padding-top: 101px; 
-    }
+  .styles {
+    padding-top: 101px;
+  }
 
+  /* PRODUCT BOXES */
 
-    /* PRODUCT BOXES */
+  .products {
+    padding-top: 101px;
+  }
 
-    .products {
-        padding-top: 101px;
-    }
+  /* FLICKITY */
 
-    /* FLICKITY */
+  .carousel-cell {
+    width: 25%;
+  }
 
-    .carousel-cell {
-        width: 25%;
-      }
+  /* UPDATES PADDING */
 
-    /* UPDATES PADDING */
+  .updates {
+    height: 22rem;
+  }
 
-    .updates {
-        height: 22rem;
-    }
-
-    .updates-top-padding {
-        padding-top: 101px;
-    }
-
-
+  .updates-top-padding {
+    padding-top: 101px;
+  }
 }
-
-
